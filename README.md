@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+#Ecommerce
+Welcome to the E-Commerce Store! This is a React-based single-page e-commerce application where users can browse products, add them to the cart, and place orders. The application features product categories, a shopping cart, and an order form.
+https://e-commerce-1092.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Product Catalog: Browse a list of products fetched from an API.
+Categories: Filter products based on categories like electronics, men's clothing, women's clothing, and jewelry.
+Shopping Cart: Add products to the cart, update quantities, and view the total price.
+Order Form: Enter customer details (name, address, phone) to place an order.
+Responsive Design: Mobile-first design for optimal viewing on all devices.
+Notifications: Real-time toast notifications when adding products to the cart.
+Dynamic Product Filtering: Ability to filter products by categories and clear filters.
 
-## Available Scripts
+Tech Stack
+React: Frontend framework for building user interfaces.
+React Router: For managing different routes (pages) in the app.
+Axios: For making API calls to fetch product data.
+React Toastify: For notifications and user feedback on actions like adding to cart.
+CSS: For styling the components and layout.
 
-In the project directory, you can run:
+Description of the Folders
+components/: Contains all the React component files (.js) and their associated CSS files.
 
-### `npm start`
+Category.js: Component to display product categories.
+Product.js: Displays individual product information.
+Cart.js: Manages the shopping cart and its functionality.
+OrderForm.js: Handles the order form for users to submit their details.
+Home.js: The landing page of the application.
+Feature.js: Displays featured products.
+Footer.js: Footer of the website.
+Images/: Contains static image files like the logo.svg.
+App.js: The main application file that brings together all components.
+App.css: Global CSS for the overall styling of the application.
+index.js: Entry point for the React application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+git clone https://github.com/your-username/ecommerce-store.git
+cd ecommerce-store
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2.Install dependencies:
+npm install
 
-### `npm test`
+3. Run the app locally:
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Access the app: Once the app is running, open http://localhost:3000 to view it in the browser.
 
-### `npm run build`
+Usage
+Home Page: You will be greeted with a welcome message and a link to browse products.
+Categories: Select a category to filter products. You can clear the filter to see all products.
+Shopping Cart: Add products to the cart, update their quantity, or remove items.
+Order Form: Place an order by filling in your details and submitting the form.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+API Used
+This app fetches data from the Fake Store API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
