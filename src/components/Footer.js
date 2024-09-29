@@ -27,7 +27,7 @@ const Footer = () => {
                         <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     </ul>
                 </div>
-                <div className="footer-section">
+                <div className="footer-section newsletter">
                     <h2>Newsletter</h2>
                     <p>Sign up for our newsletter to get the latest updates and offers.</p>
                     <form>

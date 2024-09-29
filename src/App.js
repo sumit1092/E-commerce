@@ -65,6 +65,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home setCategory={setCategory} />} />
+          <Route path="/home" element={<Home setCategory={setCategory} />} />
           <Route path="/products" element={<Products addToCart={addToCart} category={category} />} />
           <Route path="/cart" element={<Cart cartItems={cartItems} updateCart={updateCart} removeFromCart={removeFromCart} setCategory={setCategory} />} />
           <Route path="/order" element={<OrderForm cartItems={cartItems} clearCart={clearCart} />} />
