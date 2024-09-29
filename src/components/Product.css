@@ -1,0 +1,475 @@
+.product {
+    padding: 100px 0;
+    background-color: rgb(238, 245, 238);
+}
+
+.products h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rebeccapurple;
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.product-card {
+    margin-top: 50px;
+}
+
+.card {
+    height: 350px;
+    width: 270px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.info {
+    text-align: start;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    padding: 10px 10px;
+    border: 1px solid gainsboro;
+}
+
+.info h3 {
+    font-weight: bold;
+}
+
+.cart-btn {
+    padding: 10px 20px;
+    background-color: rgb(176, 207, 235);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #4896ea;
+    color:#fff;
+}
+.clear{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.clear-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(176, 207, 235);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.Toastify__toast {
+    font-size: 14px;
+    padding: 8px;
+    min-height:fit-content; 
+    border-radius: 8px; 
+  }
+  
+  .Toastify__toast-body {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .Toastify__close-button {
+    color: #fff;
+    align-self: center;
+  }
+  
+
+@media screen and (max-width: 1200px) {
+    .product {
+        padding: 50px 0;
+    }
+
+    .product-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+    }
+
+    .product-card{
+        margin-top: 40px;
+    }
+    .card{
+        height: 330px;
+        width: 240px;
+        padding: 10px;
+        background-color: white;
+    }
+    .clear{
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .product {
+        padding: 40px 0;
+    }   
+
+    .products h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .product-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .product-card{
+        margin-top: 40px;
+    }
+    .card{
+        height: 330px;
+        width: 240px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .info h3{
+        font-size: 16px;
+    }
+
+    .info p{
+        font-size: 15px;
+    }
+
+    .info h4{
+        font-size: 15px;
+    }
+
+    .cart-btn{
+        font-size: 15px;
+    }
+    .clear{
+        max-width: 700px;
+    }
+    .clear-btn{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .product {
+        padding: 30px 0;
+    }
+    .products h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .product-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }   
+
+    .product-card{
+        margin-top: 30px;
+    }
+
+    .card{
+        height: 320px;
+        width: 220px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .card img{
+        height: 50%;
+    }
+    .info{
+        height: 140px;
+        padding: 10px 10px;
+        border: 1px solid gainsboro;
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .info h3{
+        font-size: 16px;
+    }
+
+    .info p{
+        font-size: 14px;
+    }
+
+    .info h4{
+        font-size: 14px;
+    }
+
+    .cart-btn{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .clear{
+        max-width: 500px;
+    }
+
+    .clear-btn{
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .product {
+        padding: 20px 0;
+    }       
+
+    .products h1 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .product-container {
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    .product-card{
+        margin-top: 25px;
+    }
+
+    .card img{
+        height: 45%;
+    }
+
+    .info{
+        height: 120px;
+        padding: 10px 10px;
+        border: 1px solid gainsboro;
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card{
+        height: 260px;
+        width: 210px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .info h3{
+        font-size: 14px;
+    }
+
+    .info p{
+        font-size: 12px;
+    }
+
+    .info h4{
+        font-size: 12px;
+    }
+
+    .cart-btn{
+        font-size: 12px;
+        padding: 6px 13px;
+    }
+
+    .clear{
+        max-width: 420px;
+    }
+
+    .clear-btn{
+        font-size: 10px;
+        padding: 6px 13px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .product {
+        padding: 10px 0;
+    }
+
+    .products h1 {
+        text-align: center;
+        font-size: 10px;
+    }   
+
+    .product-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    .product-card{
+        margin-top: 20px;
+    }   
+
+    .card img{
+        height: 40%;
+    }
+
+    .info{
+        height: 100px;
+        padding: 5px;
+    }
+
+    .card{
+        height: 200px;
+        width: 160px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .info h3{
+        font-size: 12px;
+    }   
+
+
+    .info p{
+        font-size: 10px;
+    }
+
+    .info h4{
+        font-size: 10px;
+    }
+
+    .cart-btn{
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+
+    .clear{
+        max-width: 300px;
+    }
+
+    .clear-btn{
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+    
+}
+
+
+@media screen and (max-width: 370px) {
+    .product {
+        padding: 5px 0;
+    }
+
+    .products h1 {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .product-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .product-card{
+        margin-top: 10px;
+    }
+
+    .card img{
+        height: 35%;
+    }
+
+    .info{
+        height: 85px;
+        padding: 7px;
+    }
+
+    .card{
+        height: 160px;
+        width: 130px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .info h3{
+        font-size: 10px;
+    }   
+
+    .info p{
+        font-size: 8px;
+    }
+
+    .info h4{
+        font-size: 8px;
+    }
+
+    .cart-btn{
+        font-size: 8px;
+        padding: 3px 8px;
+        border-radius: 2px;
+    }
+
+    .clear{
+        max-width: 250px;
+    }
+
+    .clear-btn{
+        font-size: 7px;
+        padding: 3px 8px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .product-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .clear{
+        max-width: 200px;
+    }
+}

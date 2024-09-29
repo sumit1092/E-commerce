@@ -1,0 +1,72 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+    url('https://img.freepik.com/premium-photo/bright-stylish-shopping-bags-displayed-against-vibrant-backdrop-soft-green-hue_179940-2433.jpg?ga=GA1.1.242511157.1727533556&semt=ais_hybrid'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .home {
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-left: 125px;
+  }
+  
+  .top-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rebeccapurple;
+    text-transform: uppercase;
+  }
+  
+  .link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .link:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .home{
+      margin-left: 100px;
+    }
+    .top-text h2 {
+      font-size: 28px;
+    }
+  
+    .link {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home{
+      margin-left: 25px;
+    }
+    .top-text h2 {
+      font-size: 24px;
+    }
+  
+    .link {
+      font-size: 14px;
+    }
+  }
+   
